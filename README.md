@@ -4,4 +4,6 @@
 2.cd site
 3.bower i
 4.npm i
+5.JQuery i
+6.Normolize i
 5.gulp
