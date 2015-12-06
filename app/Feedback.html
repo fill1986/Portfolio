@@ -10,19 +10,22 @@
 	<title>LoftSchool JS</title>
 	<link rel="stylesheet" type="text/css" href="bower/normalize-css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/sprites.css">
+		<link rel="stylesheet" type="text/css" href="css/label.css">
 	<link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico">
 </head>
 <body>
 <div class='wrapper'>
-
+	
 
 
 
 <!--Шапка-->
 	<div class='header'>
-
-		<img src="img/logo.png" alt="LoftSchool">
-
+<a href="http://loftschool.com">
+<img src="img/logo.png" alt="LoftSchool">
+</a>
 
 <ul>
 	<li>
@@ -32,24 +35,28 @@
 	</li>
 
 	<li>
-		<a href="http://www.vk.com">
+		<a href="https://vk.com/id327600289">
 			<i class="sprite sprite-icon-vk"></i>
 		</a>
 	</li>
-	<li>	<a href="http://www.tw.com">
+	<li>	
+		<a href="http://www.tw.com">
 				<i class="sprite sprite-icon--tw"></i> 
-			</a>
+		</a>
 	</li>
 	<li>
-		<a href="http://www.github.com">
+		<a href="https://github.com/fill1986/">
 			<i class="sprite sprite-icon-git "></i>
 		</a>
 	</li>
 </ul>
 
 
+
 	</div>
 <!--Шапка-->
+
+	<div class="wrapContent">
 
 <!--Обо мне-->
 	<div class='Mainsidebar'>	
@@ -59,11 +66,11 @@
 					<li>
 						<a href="index.html">Обо мне</a>
 					</li>
-					<li class="offBorder">
-						<a href="MyWork.html">Мои работы</a>
+					<li >
+						<a href="MyWork.html" class="offBorder">Мои работы</a>
 					</li>
 					<li>
-						<a href="Feedback.html">Обратная связь</a>
+						<a href="Feedback.html" class="active">Обратная связь</a>
 					</li>
 				
 			</ul>
@@ -91,12 +98,14 @@
 			</ul>
 		</nav>
 	</div>
+	
 
 <!--Контакты-->
+<div class="content">
+<!--Основная информация-->
 
-<!--Обратная связь-->
 
-	<div class='main' id="myWork">
+	<div class='main myWork'>
 		<h1>У вас интересный проект? Напишите мне</h1>
 		
 	<form>	
@@ -142,11 +151,10 @@
 
 		
 			
-		
-		
 			
-			<div class="send" type="submit">
-				<button>Отправить</button>
+			
+			<div class="send">
+				<button type="submit">Отправить</button>
 			</div>
 
 			<div class="reset" type="reset">
@@ -157,14 +165,15 @@
 			</div>
 
 	</div>
-<!--Обратная связь-->
+<!--Образование-->
 
+</div>
 
-
-	</div>
 </div>
 
 
+</div> 
+</div>
 
 <!--Нижний блок-->
 	<div class='footer'>
@@ -180,7 +189,6 @@
 
 	<script src="bower/jquery/jquery.js"></script>
 	<script src="js/main.js"></script>
-
 
 
 </body>

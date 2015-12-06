@@ -1,0 +1,81 @@
+.wrapSkill{
+	display: inline-block;
+	max-width: 230px;
+	vertical-align: top;
+	margin-left: -10px;
+}
+
+ul.wrapSkill{
+	padding-left: 20px;
+	margin-left: 0px;
+	margin-bottom: 20px
+}
+
+
+.label {
+    display: inline-block;
+    position: relative;
+    z-index: 5;
+    text-transform: uppercase;
+    padding: 2px 8px 3px 6px;
+    margin-left: 13px;
+    margin-bottom: 8px;
+    margin-right: 5px;
+    font-size: 9px;
+    font-family: OpenSans-Semibold;
+    color: #1e7465;
+    border-radius: 1px 3px 3px 1px;
+    text-decoration: none;    
+    background-color: #e9e6e4;
+    background-image: linear-gradient(bottom, #e9e6e4, #fbf9f9 94%, #fff);
+    background-image: -o-linear-gradient(bottom, #e9e6e4, #fbf9f9 94%, #fff);
+    background-image: -moz-linear-gradient(bottom, #e9e6e4, #fbf9f9 94%, #fff);
+    background-image: -webkit-linear-gradient(bottom, #e9e6e4, #fbf9f9 94%, #fff);
+    background-image: -ms-linear-gradient(bottom, #e9e6e4, #fbf9f9 94%, #fff);
+    border: 1px solid #c5c5c5;
+    border-left: 0 solid rgba(197,197,197,0);
+    box-shadow: 0 2px 1px rgba(9,9,9,0.07), inset 0 2px 3px rgba(41,41,41,0.05),
+                inset 0 0 3px rgba(246,247,247,1);
+}
+.label::after {
+    content: "";
+    display:block;
+    position: absolute;;
+    width: 13px;
+    height: 13px;
+    border-bottom: 1px solid #c5c5c5;
+    border-left: 1px solid #c5c5c5;
+    background-color: #e9e6e4;
+    background-image: linear-gradient(bottom, #e9e6e4, #fbf9f9 94%, #fff);
+    background-image: -o-linear-gradient(bottom, #e9e6e4, #fbf9f9 94%, #fff);
+    background-image: -moz-linear-gradient(bottom, #e9e6e4, #fbf9f9 94%, #fff);
+    background-image: -webkit-linear-gradient(bottom, #e9e6e4, #fbf9f9 94%, #fff);
+    background-image: -ms-linear-gradient(bottom, #e9e6e4, #fbf9f9 94%, #fff);
+    border-radius: 2px 10px 2px 4px;
+    top:1.8px;
+    left:-7px;
+    z-index: 2;
+    box-shadow: 0 2px 1px rgba(9,9,9,0.07), inset 0 2px 3px rgba(41,41,41,0.05),
+                inset 0 0 3px rgba(246,247,247,1);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    filter: progidXImageTransform.Microsoft.Matrix(M11=0.7071067811865476, M12=-0.7071067811865475, M21=0.7071067811865475, M22=0.7071067811865476, sizingMethod='auto expand');
+    zoom: 1
+}
+
+.label::before {
+    content: "";
+    height: 3px;
+    width: 3px;
+    display: block;
+    position: absolute;
+    left: -2px;
+    top: 6px;
+    background-color: #e9e6e4;
+    border: 1px solid #bfbfbf;
+    border-radius: 3px;
+    z-index: 3;
+}

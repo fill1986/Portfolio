@@ -12,6 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
 	<link rel="stylesheet" type="text/css" href="css/sprites.css">
+		<link rel="stylesheet" type="text/css" href="css/label.css">
 	<link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico">
 </head>
 <body>
@@ -22,9 +23,9 @@
 
 <!--Шапка-->
 	<div class='header'>
-
+<a href="http://loftschool.com">
 <img src="img/logo.png" alt="LoftSchool">
-
+</a>
 
 <ul>
 	<li>
@@ -51,8 +52,11 @@
 </ul>
 
 
+
 	</div>
 <!--Шапка-->
+
+	<div class="wrapContent">
 
 <!--Обо мне-->
 	<div class='Mainsidebar'>	
@@ -60,10 +64,10 @@
 		<nav class='navigator1'>
 			<ul  class='sidebar1'>
 					<li>
-						<a href="index.html">Обо мне</a>
+						<a href="index.html" class="active">Обо мне</a>
 					</li>
-					<li class="offBorder">
-						<a href="MyWork.html">Мои работы</a>
+					<li >
+						<a href="MyWork.html" class="offBorder">Мои работы</a>
 					</li>
 					<li>
 						<a href="Feedback.html">Обратная связь</a>
@@ -97,10 +101,10 @@
 	
 
 <!--Контакты-->
-
+<div class="content">
 <!--Основная информация-->
 
-	<div class='main' id="info">
+	<div class='main' class="info">
 		<h1>Основная информация</h1>
 		
 		<div class="foto">
@@ -139,33 +143,22 @@
 
 				<div class="wrapSkills">
 				
-					<ul class="Skills">
+					         <ul class="wrapSkill">
+						        <li class="label">HTML</li> 
+						        <li class="label">CSS</li> 
+						        <li class="label">Git</li> 
+						        <li class="label">JavaScript</li>
+						        <li class="label">JQuery</li> 
+						      </ul> 
 
-						<li>
-							<a href="" class='Skills2'></a>
-							<a href="#">HTML</a>					
-						</li>
 
-						<li>
-							<a href="" class='Skills2'></a>
-							<a href="#">CSS</a>					
-						</li>
 
-						<li>
-							<a href="" class='Skills2'></a>
-							<a href="#">JavaScript</a>					
-						</li>
-						<li>
-							<a href="" class='Skills2'></a>
-							<a href="#">GIT</a>					
-						</li>
 
-					</ul>
 				</div>
 
-		</div>
-
 	</div>
+
+</div>
 <!--Основная информация-->
 
 
@@ -208,7 +201,7 @@
 
 <!--Образование-->
 	<div class='main'>
-	<h1>Образование</h1>
+		<h1>Образование</h1>
 			<ul class="mainList">
 
 			<li class='str1'>
@@ -241,11 +234,13 @@
 	</div>
 <!--Образование-->
 
-
 </div>
+<!-- </div> -->
+</div>
+<!-- </div> -->
 
-
-
+</div> <!-- content
+ -->
 <!--Нижний блок-->
 	<div class='footer'>
 		<p><a href="login.html"><i class="sprite sprite-icon-locked"></i>вход</a>© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</p>
