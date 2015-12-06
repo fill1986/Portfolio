@@ -386,9 +386,7 @@ margin-top: 32px;
 
 
 
-.myWork {
-	min-height: 842px;
-}	
+
 
 .wrapMywork{
 	padding-left: 48px;
@@ -397,7 +395,7 @@ margin-top: 32px;
 }
 
 .wrapInput{
-
+	min-height: 600px;
 	padding-top: 37px;
 	padding-left: 125px;
 	margin-top: -5px;
