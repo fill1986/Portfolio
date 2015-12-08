@@ -1,16 +1,19 @@
->Инструкция по установке моего приложения
+### Инструкция по установке моего приложения
 
 
+Вам понадобится:
 
-1.git clone https://github.com/fill1986/Portfolio.git
 
-2.cd 
-3.bower i
+$ 1.git clone https://github.com/fill1986/Portfolio.git
 
-4.npm i
+$ 2.cd 
+$ 3.npm i -i gulp
+$ 4.bower i
 
-5.JQuery i
+$ 5.npm i
 
-6.Normolize i
+$ 6.JQuery i
 
-7.gulp
+$ 7.Normolize i
+
+$ 8.Run gulp
