@@ -518,12 +518,19 @@ margin-top: 32px;
 
 
 
-.input, .textarea{
+.input,.inputName,.inputEmail,.textarea{
+	/*padding-left: 10px;*/
+
 	border-radius: 3px;
 	font-size: 12px;
 	font-family: 'OpenSans-Regular';
 	color: #727070;
 	background-color: #f8f8f9;
+}
+
+.input,.inputName,.inputEmail {
+	height: 40px;
+	width: 190px;
 }
 
 .wrapInput h2{
@@ -534,7 +541,7 @@ margin-top: 32px;
 .input {
 	height: 40px;
 	width: 190px;
-	border: 1px solid #d5d5d5;
+
 }
 
 .textarea{
@@ -546,6 +553,10 @@ padding-left: 10px;
 .inputName{
 	display: inline-block;
 	
+}
+
+.inputText{
+	margin-top: 20px;
 }
 
 .inputEmail{
@@ -855,19 +866,42 @@ margin-bottom: 10px;
 	height: 22px;
 }
 
-
-
-
-
-.error{
-	background: #D0ABAB !important;
-	border: 2px solid red !important;
+.messeg{
+	border:1px solid;
+	border-radius: 4px;
+	border:1px solid;
+	width: 100%;
+	padding:6px 10px;
+	display: none;
+	font-style: 'OpenSans-Regular'; 
+	font-size: 12px;
+	box-sizing: border-box;
 }
 
-p{
-	color: red;
-	font-size: 14px;
-	margin-left: 20px;
-	position: absolute;
-	right: -50px;
+.errorMsg {
+	background-color: #fad2d1;
+	border-collapse: #f97e76;
+	color: #f97e76;
+}
+
+
+.qtip-content{
+	border: 1px solid #dc8262;
+	background-color: #dc8262;
+	
+}
+
+.qtip-default {
+    border: 1px solid #dc8262;
+    background-color: #dc8262;
+    color: #555;
+}
+
+.addError{
+	border-color: #eccabe;
+}
+
+
+.WrapAuto {
+	visibility: hidden;
 }
