@@ -9,6 +9,7 @@
 	<meta name="author" content="">
 	<title>LoftSchool JS</title>
 	<link rel="stylesheet" type="text/css" href="bower/normalize-css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="bower/qtip2/jquery.qtip.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
 	<link rel="stylesheet" type="text/css" href="css/sprites.css">
@@ -107,29 +108,29 @@
 
 
 	<div class='main myWork'>
-		<h1>У вас интересный проект? Напишите мне</h1>
-		
-	<form>	
+		<h1>У вас интересный проект? Напишите мне </h1>
+
+	<form id='feedback'>	
 		<div class="wrapInput">
 
 			<div class="inputName">
 			   <h2>Имя</h2>
 			   
-			   		<input type=search placeholder="Как к Вам обращаться">
+			   		<input type=search placeholder="Как к Вам обращаться" class="Input" qtip-position='left' qtip-content='Вы не ввили имя'>
 			   
 			</div>
 
 			<div class="inputEmail">
 			   <h2>Email</h2>
 			   
-			   		<input type=search placeholder="Куда мне писать">
+			   		<input type=search placeholder="Куда мне писать" class="Input" qtip-position='right' qtip-content='Веедите адрес почты'>
 			   
 			</div>
 
 			<div class="inputText">
 			   <h2>Сообщение</h2>
 			   
-			   		<textarea placeholder='Кратко в чем суть'></textarea>
+			   		<textarea placeholder='Кратко в чем суть' class="textarea" qtip-position='left' qtip-content='Ваше предложение?'></textarea>
 			   
 			</div>
 
@@ -146,7 +147,7 @@
 
 				<div class="inputKode">
 				    
-				   	<input type=search placeholder="Введите код">
+				   	<input type=search placeholder="Введите код" qtip-position='right' qtip-content='Введите код'>
 				   
 				</div>
 
@@ -159,7 +160,7 @@
 			</div>
 
 			<div class="reset" type="reset">
-				<button>Очистить</button>
+				<button type="reset">Очистить</button>
 			</div>
 
 		</form>
@@ -187,9 +188,12 @@
 
 
 
-
 	<script src="bower/jquery/jquery.js"></script>
-	<script src="js/main.js"></script>
+	<script src="bower/qtip2/jquery.qtip.js"></script>
+	<script src="js/validation.js"></script>
+	<script src="js/feedback.js"></script>
+	
+	
 
 
 </body>
