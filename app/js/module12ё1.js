@@ -8,21 +8,21 @@ var myModule =(function(){
 
 	//Lisen Event
 	var _setUpListners=function(){
-	
 		$('#addProject').on('click',_showPopup);//open window
 		$('#addNewProject').on('submit',_addProject);//add Project
-		$('#fileupload').on('change', changefileUpload);
+		// $('#fileupload').on('change', changefileUpload);
 	};
 
+    // var changefileUpload = function (){
+    //     var 
+    //         input = $(this), // Инпут type="file"
+    //         name = input[0].files[0].name; // Имя загруженного файла
+    //     $('#filename').val(name); // Добавление имени в инпут "filename".
+    // };
 
-	    var changefileUpload = function (){
-        var input = $(this), // Инпут type="file"
-            name = input[0].files[0].name; // Имя загруженного файла
-        $('#filename').val(name); // Добавление имени в инпут "filename".
-        
-    };
+    
 
-
+   
 
 	var _showPopup=function(ev){
 			console.log ('вызов окна');
@@ -33,7 +33,7 @@ var myModule =(function(){
 			wrapPopup.bPopup({
 			onClose:function(){
 			form.find('.messeg').text('').hide();
-			form.trigger('reset')
+			form.trigger('res')
 			}
 		});
 	};
@@ -53,7 +53,7 @@ var myModule =(function(){
 		 			// console.log(data);
 
 		 		if (Answer){
-		 				Answer.done(function(ans){
+		 					Answer.done(function(ans){
 					var errorBox=form.find('.errorMsg'),
 						sucsessBox=form.find('.sucsessMsg');
 
@@ -61,16 +61,7 @@ var myModule =(function(){
 						errorBox.hide();
 						console.log (ans.text);
 						form.find('.sucsessMsg').text(ans.text).show();
-					}
-
-					else if (ans.status==='error') {
-						sucsessBox.hide();
-						console.log (ans.text);
-						// form.find('.errorMsg').text(ans.text).show();
-						form.find('.errorMsg').text('dscdscdscscd').show();
-					}
-
-					else {
+					}else {
 						sucsessBox.hide();
 						form.find('.errorMsg').text(ans.text).show();
 						}		
@@ -121,7 +112,7 @@ function getName (str){
         var i = str.lastIndexOf('/')+1;
     }						
     var filename = str.slice(i);			
-    var uploaded = document.getElementById("fileformlabel");
+    var uploaded = document.getElementById("img");
     console.log(filename);
     uploaded.innerHTML = filename;
 }

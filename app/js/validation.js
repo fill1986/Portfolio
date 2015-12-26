@@ -9,7 +9,20 @@
 	var _setUpListners=function(){
 		$('form').on('keydown','.addError', _delError);
 		$('form').on('reset', _reset);
+		$('#filename').on('change', _change);
+		$('#fileupload').on('change', _change);
+	
+
 	};
+
+	var _change = function (){
+    	console.log('Удаление тултипа');
+
+    	$('#filename')
+			.trigger('hideTooltip');
+
+    }
+    
 
 	var _delError=function(){
 		$(this).removeClass("addError");
@@ -37,6 +50,7 @@
 				}
 			}
 		}
+    
 
 	
 
@@ -51,7 +65,11 @@
 			event:'show'
 		},
 		hide: {
-			event: 'keydown hideTooltip'
+			event: 'keydown hideTooltip',
+			// event:'change',
+			// event:'click',
+			// event:'unload'
+						
 		},
 		position:position,
 		style: {
@@ -67,7 +85,7 @@
 };
 	var validationForm = function (form){
 		console.log('Модуль валидации');
-		var element = form.find('input, textarea').not('input[type="submit"], input[type="reset"], input[type="file"], input[type="hedden"]'),
+		var element = form.find('input, textarea').not('input[type="submit"], input[type="reset"], input[type="file"], input[type="hidden"]'),
 			valid=true;
 	
 		$.each(element, function (index, val){
@@ -81,6 +99,7 @@
 					_qTip(element, pos);
 					valid=false;
 				}
+
 		});
 
 		return valid;

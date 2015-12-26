@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name='viewport' content='width=device-width, init-scale=1'>
+	<!-- <meta name='viewport' content='width=device-width, init-scale=1'> -->
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="author" content="">
@@ -113,19 +113,31 @@
 	<form id='feedback'>	
 		<div class="wrapInput">
 
-			<div class="inputName">
+<!-- 			<div class="inputName">
 			   <h2>Имя</h2>
 			   
-			   		<input class="inputName" type=search placeholder="Как к Вам обращаться" class="Input" qtip-position='left' qtip-content='Вы не ввили имя'>
+			   		<input type=search placeholder="Как к Вам обращаться" class="Input" qtip-position='left' qtip-content='Вы не ввили имя'>
 			   
-			</div>
+			</div> -->
+			<!-- <label class="inputName"> -->
+			<label>
+				<span>Имя</span>
+				<input placeholder="Как к Вам обращаться" class="Input" qtip-position='left' qtip-content='Вы не ввили имя'></input>
+			</label>
 
-			<div class="inputEmail">
+			<!-- <label class="inputEmail"> -->
+			<label>
+				<span>Email</span>
+				<input type=search placeholder="Куда мне писать" class="Input" qtip-position='right' qtip-content='Веедите адрес почты'></input>
+			</label>
+
+
+		<!-- 	<div class="inputEmail">
 			   <h2>Email</h2>
 			   
-			   		<input class="inputEmail" type=search placeholder="Куда мне писать" class="Input" qtip-position='right' qtip-content='Веедите адрес почты'>
+			   		<input type=search placeholder="Куда мне писать" class="Input" qtip-position='right' qtip-content='Веедите адрес почты'>
 			   
-			</div>
+			</div> -->
 
 			<div class="inputText">
 			   <h2>Сообщение</h2>
@@ -147,7 +159,7 @@
 
 				<div class="inputKode">
 				    
-				   	<input type=search placeholder="Введите код" qtip-position='right' qtip-content='Введите код'>
+				   	<input class='inpkod' type=search placeholder="Введите код"qtip-position='right' qtip-content='Введите код'>
 				   
 				</div>
 
@@ -156,7 +168,7 @@
 			
 			
 			<div class="send">
-				<button type="submit">Отправить</button>
+				<button class='sendBut' type="submit">Отправить</button>
 			</div>
 
 			<div class="reset" type="reset">

@@ -3,18 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name='viewport' content='width=device-width, init-scale=1'>
+<!-- 	<meta name='viewport' content='width=device-width, init-scale=1'> -->
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="author" content="">
 	<title>LoftSchool JS</title>
 	<link rel="stylesheet" type="text/css" href="bower/normalize-css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
 	<link rel="stylesheet" type="text/css" href="css/sprites.css">
 	<link rel="stylesheet" type="text/css" href="bower/qtip2/jquery.qtip.css">
 		<link rel="stylesheet" type="text/css" href="css/label.css">
 	<link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 
 </head>
 <body>
@@ -107,7 +108,7 @@
 <div class="content">
 <!--Основная информация-->
 
-<div class='main myWork'>
+<div class='main'>
 		<h1>Мои работы</h1>
 
 		<div class="wrapMywork">
@@ -183,17 +184,20 @@
 				<input type="text" name="name" class='popI'placeholder='Введите название' qtip-position='left' qtip-content='Введите название' >
 				
 				
-					<h2 class="popH">Картинка проекта</h2>
-
-				
-				<div class="fileform">
-					<div class="selectbutton"></div>
-					<div id="fileformlabel"></div>
-					<input id="upload" type="file" name="upload" placeholder='Добавте куртинку' onchange="getName(this.value);" qtip-position='left' qtip-content='Изображение'>
-				</div>
 
 
-				
+				<div class="addproject_field_box">
+                    <label for="fileupload" class="form-add_new_project-label">Картинка проекта</label>
+                    	  <input id="filename" name="filename" type="text" class="add_proj_text_input" required placeholder="Загрузите изображение" disabled qtip-position='left' qtip-content='Изображение'>
+                      <label class="add_proj_file_button">
+                        <input id="fileupload" class="fileupload" type="file" name="files[]" placeholder='Изображение' qtip-position='left' qtip-content='Изображение'>
+                        <input id="fileurl" type="hidden" name="fileurl" name="files[]">
+                      </label>
+                 </div>
+
+
+
+		
 				<h2 class="popHU">URL проекта</h2>
 				<input type="text" name="url" class='popI' placeholder='Добавте ссылку' qtip-position='left' qtip-content='Введите ссылку'>
 				
@@ -218,7 +222,7 @@
 </div>
 </div>
 
-	<div class="WrapAuto">
+<!-- 	<div class="WrapAuto">
 		<div class="auto">
 			<input type="text" name="name" class='input mailI' placeholder='Введите Email'>
 			<input type="text" name="name" class='input pasI' placeholder='Введите пароль'>
@@ -232,7 +236,7 @@
 			<div class="WrapbutPop">
 				<button class="butPop">Войти</button>
 			<div>
-	</div>
+	</div> -->
 
 
 
