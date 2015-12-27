@@ -100,7 +100,7 @@ body{
 	border-radius: 5px;
 	margin-bottom: 36px;
 	width: 250px;
-	height: 165px;
+	/*height: 165px;*/
 	border: 1px solid #c5c5c5;
 	
 }
@@ -172,7 +172,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbfaf9', end
 	border-radius: 5px;
 	background-color: white;
 	width: 250px;
-	height: 155px;
+	/*height: 155px;*/
 }
 
 
@@ -969,10 +969,10 @@ margin-bottom: 10px;
 
 
 
-.style {
+/*.style {
 	width: 12px !important;
     height: 12px !important;
-}
+}*/
 
 
 .addError{
